@@ -113,8 +113,7 @@ app.layout = html.Div(children=[
                                                      placeholder="Select a year",
                                                      style={'width':'80%', 'padding':'3px', 'font-size': '20px', 'text-align-last' : 'center'}),
                                             # Place them next to each other using the division style
-                                            ], style={'display': 'flex'}),  
-                                          
+                                            ], style={'display': 'flex'}), ]),
                                 
                                 # Add Computed graphs
                                 # REVIEW3: Observe how we add an empty division and providing an id that will be updated during callback
@@ -151,7 +150,7 @@ app.layout = html.Div(children=[
                [State("plot1", 'children'), State("plot2", "children"),
                 State("plot3", "children"), State("plot4", "children"),
                 State("plot5", "children")
-               ]),
+               ])
 
                  
 # Add computation to callback function and return graph
